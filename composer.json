@@ -11,8 +11,8 @@
     ],
     "require": {
         "php": ">=7.2",
-        "oleg-andreyev/mink-phpwebdriver": "^1.0",
-        "behat/mink-extension": "^2.0"
+        "behat/mink-extension": "^2.0",
+        "oleg-andreyev/mink-phpwebdriver": "dev-workaround202109@dev"
     },
     "require-dev": {
         "behat/behat": "^3.0",
@@ -27,5 +27,11 @@
         "psr-4": {
             "OAndreyev\\MinkPhpWebdriverExtension\\Tests\\": "tests/"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nobiinu-and/MinkPhpWebDriver"
+        }
+    ]
 }
